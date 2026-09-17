@@ -9,7 +9,7 @@
   },
   "homepage": "https://openclawcash.com/mcp",
   "repository": "https://github.com/openclawcash/agentwalletapi",
-  "license": "Proprietary",
+  "license": "MIT",
   "keywords": [
     "claude-code",
     "mcp",
