@@ -33,6 +33,15 @@ Get a key at [openclawcash.com](https://openclawcash.com) (sign up, create a wal
 
 The key is only ever sent to `https://openclawcash.com` (or an `https://<subdomain>.openclawcash.com` host).
 
+### Two ways in, two key names
+
+- **The MCP tools** read `OPENCLAWCASH_AGENT_KEY` from your environment (the export above). This is the
+  normal path.
+- **The bundled skill's shell script** (`skills/agentwalletapi/scripts/agentwalletapi.sh`) is a separate
+  command-line path. It reads `AGENTWALLETAPI_KEY` from a `.env` file that
+  `skills/agentwalletapi/scripts/setup.sh` creates next to it. You only need this if you call the script
+  directly; the MCP tools work without it.
+
 ## What you get
 
 - The `openclawcash` MCP server, exposing wallet, transfer, swap, approvals, checkout, Polymarket, and
