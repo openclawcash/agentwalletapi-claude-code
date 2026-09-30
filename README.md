@@ -16,11 +16,8 @@ server-side.
 /plugin install agentwalletapi@openclawcash
 ```
 
-Then set your API key before starting Claude Code:
-
-```bash
-export OPENCLAWCASH_AGENT_KEY=occ_your_api_key
-```
+Claude Code asks for your API key when you install (it is stored by Claude Code, not in the plugin).
+Change it later with `claude plugin configure agentwalletapi@openclawcash`.
 
 Get a key at [openclawcash.com](https://openclawcash.com) (sign up, create a wallet, open API Keys).
 
@@ -28,7 +25,7 @@ Get a key at [openclawcash.com](https://openclawcash.com) (sign up, create a wal
 
 | | |
 |---|---|
-| Required env var | `OPENCLAWCASH_AGENT_KEY` |
+| Required setting | `agent_key`, prompted at install (sensitive) |
 | Optional env var | `OPENCLAWCASH_BASE_URL` (default `https://openclawcash.com`) |
 | Runtime | Node.js with `npx` available |
 
@@ -36,8 +33,8 @@ The key is only ever sent to `https://openclawcash.com` (or an `https://<subdoma
 
 ### Two ways in, two key names
 
-- **The MCP tools** read `OPENCLAWCASH_AGENT_KEY` from your environment (the export above). This is the
-  normal path.
+- **The MCP tools** get your key from the install prompt (`agent_key`) and pass it to the server as
+  `OPENCLAWCASH_AGENT_KEY`. This is the normal path.
 - **The bundled skill's shell script** (`skills/agentwalletapi/scripts/agentwalletapi.sh`) is a separate
   command-line path. It reads `AGENTWALLETAPI_KEY` from a `.env` file that
   `skills/agentwalletapi/scripts/setup.sh` creates next to it. You only need this if you call the script

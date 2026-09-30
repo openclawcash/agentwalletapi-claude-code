@@ -19,5 +19,15 @@
     "solana",
     "agents",
     "openclawcash"
-  ]
+  ],
+  "userConfig": {
+    "agent_key": {
+      "type": "string",
+      "title": "OpenClawCash agent API key",
+      "description": "Your OpenClawCash agent API key (starts with occ_). Create one at openclawcash.com under API Keys. It is stored by Claude Code, not in this plugin, and is only ever sent to openclawcash.com.",
+      "sensitive": true,
+      "required": true
+    }
+  },
+  "icon": "./.claude-plugin/icon.png"
 }
