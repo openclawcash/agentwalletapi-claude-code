@@ -12,7 +12,8 @@ server-side.
 ## Install
 
 ```
-/plugin install openclawcash/agentwalletapi-claude-code
+/plugin marketplace add openclawcash/agentwalletapi-claude-code
+/plugin install agentwalletapi@openclawcash
 ```
 
 Then set your API key before starting Claude Code:
@@ -53,6 +54,7 @@ The key is only ever sent to `https://openclawcash.com` (or an `https://<subdoma
 
 ```
 .claude-plugin/plugin.json   plugin manifest
+.claude-plugin/marketplace.json   one-plugin marketplace (what `marketplace add` reads)
 .mcp.json                    MCP server declaration
 skills/agentwalletapi/       the skill
 ```

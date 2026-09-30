@@ -1,0 +1,15 @@
+{
+  "name": "openclawcash",
+  "owner": {
+    "name": "OpenClawCash",
+    "url": "https://openclawcash.com"
+  },
+  "plugins": [
+    {
+      "name": "agentwalletapi",
+      "source": "./",
+      "description": "Managed EVM and Solana wallets for AI agents, backed by the OpenClawCash agent API."
+    }
+  ],
+  "description": "OpenClawCash plugins for Claude Code: managed EVM and Solana agent wallets."
+}
