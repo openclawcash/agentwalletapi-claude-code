@@ -4,7 +4,7 @@
       "command": "npx",
       "args": [
         "-y",
-        "@openclawcash/mcp-server@0.1.26"
+        "@openclawcash/mcp-server@0.1.27"
       ],
       "env": {
         "OPENCLAWCASH_AGENT_KEY": "${user_config.agent_key}",
