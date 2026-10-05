@@ -8,8 +8,8 @@
     {
       "name": "agentwalletapi",
       "source": "./",
-      "description": "Managed EVM and Solana wallets for AI agents, backed by the OpenClawCash agent API."
+      "description": "Crypto wallet for AI agents on Ethereum, Polygon, Base and Solana. The agent gets an API key, never a private key, and your spending limits and allowlist are checked before anything is signed. Send, swap, bridge, trade on Polymarket and get paid through escrow."
     }
   ],
-  "description": "OpenClawCash plugins for Claude Code: managed EVM and Solana agent wallets."
+  "description": "OpenClawCash plugins for Claude Code: crypto wallets for AI agents, with spending limits checked before anything is signed."
 }
